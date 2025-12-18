@@ -21,10 +21,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Toggle current
             trigger.setAttribute('aria-expanded', !isExpanded);
-            
+
             if (content) {
                 content.hidden = isExpanded; // If it was expanded, it becomes hidden (true)
             }
         });
     });
+
+    // Set current year in footer
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
 });
