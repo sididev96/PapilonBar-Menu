@@ -1,143 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="PapilonBar Menu - Drinks and Food">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="description" content="PapilonBar Menu - Drinks and Food" />
     <title>PapilonBar Menu</title>
 
+    <link rel="icon" href="favicon.png" type="image/png" />
+
     <!-- Google Fonts: Outfit -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-
+  <body>
     <header class="main-header">
-        <div class="logo-container">
-            <!-- Ensure logo.svg exists in the root directory as per instructions -->
-            <img src="logo.svg" alt="PapilonBar Logo" class="brand-logo">
-        </div>
+      <div class="logo-container">
+        <!-- Ensure logo.avif exists in the root directory -->
+        <img src="logo.avif" alt="PapilonBar Logo" class="brand-logo" />
+      </div>
     </header>
 
     <main class="menu-container">
-
-        <!-- Drinks Section -->
-        <section class="accordion-item" id="drinks-section">
-            <button class="accordion-header" aria-expanded="false" aria-controls="drinks-content">
-                <span class="header-text">DRINKS</span>
-                <span class="icon">+</span>
-            </button>
-            <div id="drinks-content" class="accordion-content" hidden>
-                <div class="menu-grid">
-                    <!-- Cocktails -->
-                    <div class="menu-category">
-                        <h3>Cocktails</h3>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <span class="item-name">Classic Mojito</span>
-                                <span class="item-price">$12</span>
-                            </div>
-                            <p class="item-desc">White rum, sugar, lime juice, soda water, mint.</p>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <span class="item-name">Old Fashioned</span>
-                                <span class="item-price">$14</span>
-                            </div>
-                            <p class="item-desc">Bourbon, bitters, sugar cube, orange twist.</p>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <span class="item-name">Espresso Martini</span>
-                                <span class="item-price">$13</span>
-                            </div>
-                            <p class="item-desc">Vodka, espresso coffee, coffee liqueur.</p>
-                        </div>
-                    </div>
-
-                    <!-- Beers -->
-                    <div class="menu-category">
-                        <h3>Beers</h3>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <span class="item-name">Local Lager</span>
-                                <span class="item-price">$8</span>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <span class="item-name">Craft IPA</span>
-                                <span class="item-price">$9</span>
-                            </div>
-                        </div>
-                    </div>
+      <!-- Drinks Section -->
+      <section class="accordion-item" id="drinks-section">
+        <button
+          class="accordion-header"
+          aria-expanded="true"
+          aria-controls="drinks-content"
+        >
+          <span class="header-text">DRINKS</span>
+          <span class="icon">+</span>
+        </button>
+        <div id="drinks-content" class="accordion-content">
+          <div class="menu-grid">
+            <!-- Cocktails -->
+            <div class="menu-category">
+              <h3>Cocktails</h3>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Classic Mojito</span>
+                  <span class="item-price">$12</span>
                 </div>
-            </div>
-        </section>
-
-        <!-- Divider is handled by CSS spacing/borders -->
-
-        <!-- Foods Section -->
-        <section class="accordion-item" id="foods-section">
-            <button class="accordion-header" aria-expanded="false" aria-controls="foods-content">
-                <span class="header-text">FOODS</span>
-                <span class="icon">+</span>
-            </button>
-            <div id="foods-content" class="accordion-content" hidden>
-                <div class="menu-grid">
-                    <!-- Starters -->
-                    <div class="menu-category">
-                        <h3>Bar Bites</h3>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <span class="item-name">Truffle Fries</span>
-                                <span class="item-price">$9</span>
-                            </div>
-                            <p class="item-desc">Parmesan, truffle oil, garlic aioli.</p>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <span class="item-name">Spicy Wings</span>
-                                <span class="item-price">$14</span>
-                            </div>
-                            <p class="item-desc">Blue cheese dip, celery sticks.</p>
-                        </div>
-                    </div>
-
-                    <!-- Mains -->
-                    <div class="menu-category">
-                        <h3>Mains</h3>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <span class="item-name">Classic Burger</span>
-                                <span class="item-price">$18</span>
-                            </div>
-                            <p class="item-desc">Angus beef, cheddar, lettuce, tomato, house sauce.</p>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <span class="item-name">Crispy Calamari</span>
-                                <span class="item-price">$16</span>
-                            </div>
-                            <p class="item-desc">Lemon wedge, marinara sauce.</p>
-                        </div>
-                    </div>
+                <p class="item-desc">
+                  White rum, sugar, lime juice, soda water, mint.
+                </p>
+              </div>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Old Fashioned</span>
+                  <span class="item-price">$14</span>
                 </div>
+                <p class="item-desc">
+                  Bourbon, bitters, sugar cube, orange twist.
+                </p>
+              </div>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Espresso Martini</span>
+                  <span class="item-price">$13</span>
+                </div>
+                <p class="item-desc">Vodka, espresso coffee, coffee liqueur.</p>
+              </div>
             </div>
-        </section>
 
+            <!-- Beers -->
+            <div class="menu-category">
+              <h3>Beers</h3>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Local Lager</span>
+                  <span class="item-price">$8</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Craft IPA</span>
+                  <span class="item-price">$9</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Divider is handled by CSS spacing/borders -->
+
+      <!-- Foods Section -->
+      <section class="accordion-item" id="foods-section">
+        <button
+          class="accordion-header"
+          aria-expanded="true"
+          aria-controls="foods-content"
+        >
+          <span class="header-text">FOODS</span>
+          <span class="icon">+</span>
+        </button>
+        <div id="foods-content" class="accordion-content">
+          <div class="menu-grid">
+            <!-- Starters -->
+            <div class="menu-category">
+              <h3>Bar Bites</h3>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Truffle Fries</span>
+                  <span class="item-price">$9</span>
+                </div>
+                <p class="item-desc">Parmesan, truffle oil, garlic aioli.</p>
+              </div>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Spicy Wings</span>
+                  <span class="item-price">$14</span>
+                </div>
+                <p class="item-desc">Blue cheese dip, celery sticks.</p>
+              </div>
+            </div>
+
+            <!-- Mains -->
+            <div class="menu-category">
+              <h3>Mains</h3>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Classic Burger</span>
+                  <span class="item-price">$18</span>
+                </div>
+                <p class="item-desc">
+                  Angus beef, cheddar, lettuce, tomato, house sauce.
+                </p>
+              </div>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Crispy Calamari</span>
+                  <span class="item-price">$16</span>
+                </div>
+                <p class="item-desc">Lemon wedge, marinara sauce.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="main-footer">
-        <p>&copy; <span id="current-year"></span> PapilonBar</p>
+      <p>&copy; <span id="current-year"></span> PapilonBar</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

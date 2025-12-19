@@ -8,206 +8,210 @@
  */
 
 :root {
-    --color-bg: #111521;
-    --color-card-bg: #1C2338;
-    --color-accent: #CCA971;
-    --color-text-main: #F4EEE8;
-    --color-text-muted: #aeb4c0;
+  --color-bg: #111521;
+  --color-card-bg: #1c2338;
+  --color-accent: #cca971;
+  --color-text-main: #f4eee8;
+  --color-text-muted: #aeb4c0;
 
-    --font-main: 'Outfit', sans-serif;
+  --font-main: "Outfit", sans-serif;
 
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-md: 1.5rem;
-    --spacing-lg: 2rem;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
 
-    --border-radius: 12px;
-    --transition-speed: 0.3s;
+  --border-radius: 12px;
+  --transition-speed: 0.3s;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: var(--font-main);
-    background-color: var(--color-bg);
-    color: var(--color-text-main);
-    line-height: 1.6;
-    -webkit-tap-highlight-color: transparent;
-    /* Remove tap highlight on mobile */
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  line-height: 1.6;
+  -webkit-tap-highlight-color: transparent;
+  /* Remove tap highlight on mobile */
 }
 
 /* Header & Logo */
 .main-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: var(--spacing-xs) var(--spacing-sm);
-    background: linear-gradient(180deg, rgba(28, 35, 56, 1) 0%, rgba(17, 21, 33, 0) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: linear-gradient(
+    180deg,
+    rgba(28, 35, 56, 1) 0%,
+    rgba(17, 21, 33, 0) 100%
+  );
 }
 
 .logo-container {
-    width: 400px;
-    max-width: 95%;
+  width: 220px;
+  max-width: 50%;
 }
 
 .brand-logo {
-    width: 100%;
-    height: auto;
-    display: block;
-    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
 }
 
 /* Menu Container */
 .menu-container {
-    max-width: 600px;
-    /* Mobile focused, restricted width on desktop */
-    margin: 0 auto;
-    padding: 0 var(--spacing-sm) var(--spacing-lg);
+  max-width: 600px;
+  /* Mobile focused, restricted width on desktop */
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm) var(--spacing-lg);
 }
 
 /* Accordion Styles */
 .accordion-item {
-    margin-bottom: var(--spacing-md);
-    background-color: var(--color-card-bg);
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(204, 169, 113, 0.1);
-    /* Subtle gold border */
+  margin-bottom: var(--spacing-md);
+  background-color: var(--color-card-bg);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(204, 169, 113, 0.1);
+  /* Subtle gold border */
 }
 
 .accordion-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--spacing-md);
-    background: none;
-    border: none;
-    color: var(--color-accent);
-    font-family: var(--font-main);
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: background-color var(--transition-speed);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  font-family: var(--font-main);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color var(--transition-speed);
 }
 
 .accordion-header:hover {
-    background-color: rgba(255, 255, 255, 0.03);
+  background-color: rgba(255, 255, 255, 0.03);
 }
 
 .accordion-header .icon {
-    font-size: 1.5rem;
-    transition: transform var(--transition-speed);
+  font-size: 1.5rem;
+  transition: transform var(--transition-speed);
 }
 
 .accordion-header[aria-expanded="true"] .icon {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 /* Accordion Content */
 .accordion-content {
-    /* Height animation handling requires JS or max-height trick */
-    /* We'll use JS to toggle 'hidden' and perform animation if possible, 
+  /* Height animation handling requires JS or max-height trick */
+  /* We'll use JS to toggle 'hidden' and perform animation if possible, 
        but for pure CSS/JS simplicity we'll just show/hide first.
        Let's add a slide down animation class. */
-    display: none;
-    padding: 0 var(--spacing-md) var(--spacing-md);
-    animation: slideDown 0.3s ease-out forwards;
+  display: none;
+  padding: 0 var(--spacing-md) var(--spacing-md);
+  animation: slideDown 0.3s ease-out forwards;
 }
 
 .accordion-content:not([hidden]) {
-    display: block;
+  display: block;
 }
 
 @keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Menu Grid/Items */
 .menu-category {
-    margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
 }
 
 .menu-category h3 {
-    color: var(--color-text-muted);
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: var(--spacing-sm);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding-bottom: 4px;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: var(--spacing-sm);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 4px;
 }
 
 .menu-item {
-    margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
 }
 
 .menu-item:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .item-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
 }
 
 .item-name {
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: var(--color-text-main);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--color-text-main);
 }
 
 .item-price {
-    color: var(--color-accent);
-    font-weight: 700;
+  color: var(--color-accent);
+  font-weight: 700;
 }
 
 .item-desc {
-    color: var(--color-text-muted);
-    font-size: 0.9rem;
-    font-weight: 300;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  font-weight: 300;
 }
 
 /* Footer */
 .main-footer {
-    text-align: center;
-    padding: var(--spacing-lg);
-    color: var(--color-text-muted);
-    font-size: 0.8rem;
-    opacity: 0.6;
+  text-align: center;
+  padding: var(--spacing-lg);
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+  opacity: 0.6;
 }
 
 /* Media Queries */
 @media (min-width: 768px) {
-    .menu-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: var(--spacing-md);
-    }
+  .menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+  }
 
-    .menu-category {
-        /* Fix breaking inside grid */
-        break-inside: avoid;
-    }
+  .menu-category {
+    /* Fix breaking inside grid */
+    break-inside: avoid;
+  }
 
-    .menu-category:last-child {
-        margin-bottom: 0;
-    }
+  .menu-category:last-child {
+    margin-bottom: 0;
+  }
 }
