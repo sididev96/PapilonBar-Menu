@@ -1,351 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="description" content="PapilonBar Menu - Drinks and Food" />
+    <title>PapilonBar Menu</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="description" content="PapilonBar Menu - Drinks and Food" />
-  <title>PapilonBar Menu</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
 
-  <link rel="icon" href="favicon.png" type="image/png" />
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts: Outfit -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <link rel="stylesheet" href="styles.css" />
-</head>
+  <body>
+    <header class="main-header">
+      <div class="logo-container">
+        <!-- Ensure logo.avif exists in the root directory -->
+        <a href="index.html">
+          <img src="logo.avif" alt="PapilonBar Logo" class="brand-logo" />
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Menu</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header class="main-header">
-    <div class="logo-container">
-      <!-- Ensure logo.avif exists in the root directory -->
-      <a href="index.html">
-        <img src="logo.avif" alt="PapilonBar Logo" class="brand-logo" />
-      </a>
-    </div>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index.html" class="active">Menu</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main class="menu-container">
+      <!-- Drinks Section -->
+      <section class="accordion-item" id="drinks-section">
+        <button
+          class="accordion-header"
+          aria-expanded="false"
+          aria-controls="drinks-content"
+        >
+          <span class="header-text">PIJET / DRINKS</span>
+          <span class="icon">+</span>
+        </button>
+        <div id="drinks-content" class="accordion-content" hidden>
+          <div class="menu-grid">
+            <!-- Cocktails -->
+            <div class="menu-category">
+              <h3>Pijet e Freskëta / Cold Drinks</h3>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Rose Lemonade</span>
+                  <span class="item-price">€4</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Red Bull</span>
+                  <span class="item-price">€3.5</span>
+                </div>
+                <p class="item-desc">Energy Drink</p>
+              </div>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Golden Eagle</span>
+                  <span class="item-price">€1.5</span>
+                </div>
+                <p class="item-desc">Energy Drink</p>
+              </div>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Coca-Cola</span>
+                  <span class="item-price">€1.8</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Sprite</span>
+                  <span class="item-price">€1.8</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Schwepps</span>
+                  <span class="item-price">€1.8</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Schwepps Tonic</span>
+                  <span class="item-price">€1.8</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <span class="item-name">Fanta</span>
+                <span class="item-price">€1.8</span>
+              </div>
+              <p class="item-desc">Orange, Tropical, Exotic</p>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <span class="item-name">Sola Ice Tea</span>
+                <span class="item-price">€1.8</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <span class="item-name">Sola Multi Vitamin</span>
+                <span class="item-price">€1.8</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <span class="item-name">Pjeshkë / Peach</span>
+                <span class="item-price">€1.8</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <span class="item-name">Dredhzë / Strawberry</span>
+                <span class="item-price">€1.8</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <span class="item-name">Vishnje / Sour Cherry</span>
+                <span class="item-price">€1.8</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <span class="item-name">Portokall / Orange</span>
+                <span class="item-price">€1.8</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <span class="item-name">Mollë / Apple</span>
+                <span class="item-price">€1.8</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <span class="item-name">ACE</span>
+                <span class="item-price">€1.8</span>
+              </div>
+              <p class="item-desc">Limon, Portokall, Karrotë</p>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <span class="item-name">Ujë / Water</span>
+                <span class="item-price">€1</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <span class="item-name">Ujë Mineral / Sparkling Water</span>
+                <span class="item-price">€1.2</span>
+              </div>
+            </div>
+          </div>
 
-  <main class="menu-container">
-    <!-- Drinks Section -->
-    <section class="accordion-item" id="drinks-section">
-      <button class="accordion-header" aria-expanded="false" aria-controls="drinks-content">
-        <span class="header-text">PIJET / DRINKS</span>
-        <span class="icon">+</span>
-      </button>
-      <div id="drinks-content" class="accordion-content" hidden>
-        <div class="menu-grid">
-          <!-- Cocktails -->
+          <!-- Beers -->
           <div class="menu-category">
-            <h3>Pijet e Freskëta / Cold Drinks</h3>
+            <h3>Pijet e Ngrohta / Hot Drinks</h3>
             <div class="menu-item">
               <div class="item-header">
-                <span class="item-name">Rose Lemonade</span>
-                <span class="item-price">€4</span>
+                <span class="item-name">Espresso</span>
+                <span class="item-price">€1.2</span>
               </div>
             </div>
             <div class="menu-item">
               <div class="item-header">
-                <span class="item-name">Red Bull</span>
-                <span class="item-price">€3.5</span>
+                <span class="item-name">Double Espresso</span>
+                <span class="item-price">€2</span>
               </div>
-              <p class="item-desc">Energy Drink</p>
             </div>
             <div class="menu-item">
               <div class="item-header">
-                <span class="item-name">Golden Eagle</span>
+                <span class="item-name"
+                  >Macchiato e vogë / Small Macchiato</span
+                >
+                <span class="item-price">€1.2</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <span class="item-name">Macchiato e madhe / Big Macchiato</span>
                 <span class="item-price">€1.5</span>
               </div>
-              <p class="item-desc">Energy Drink</p>
             </div>
             <div class="menu-item">
               <div class="item-header">
-                <span class="item-name">Coca-Cola</span>
-                <span class="item-price">€1.8</span>
+                <span class="item-name">Amerikane / Americano</span>
+                <span class="item-price">€1.5</span>
               </div>
             </div>
             <div class="menu-item">
               <div class="item-header">
-                <span class="item-name">Sprite</span>
-                <span class="item-price">€1.8</span>
+                <span class="item-name">NessCoffe Classic </span>
+                <span class="item-price">€1.2</span>
               </div>
             </div>
             <div class="menu-item">
               <div class="item-header">
-                <span class="item-name">Schwepps</span>
-                <span class="item-price">€1.8</span>
+                <span class="item-name">NessCoffe Vanila </span>
+                <span class="item-price">€1.2</span>
               </div>
             </div>
             <div class="menu-item">
               <div class="item-header">
-                <span class="item-name">Schwepps Tonic</span>
-                <span class="item-price">€1.8</span>
+                <span class="item-name">Qaj Menta / Menthol Tea</span>
+                <span class="item-price">€1.2</span>
               </div>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">Fanta</span>
-              <span class="item-price">€1.8</span>
-            </div>
-            <p class="item-desc">Orange, Tropical, Exotic</p>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">Sola Ice Tea</span>
-              <span class="item-price">€1.8</span>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">Sola Multi Vitamin</span>
-              <span class="item-price">€1.8</span>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">Pjeshkë / Peach</span>
-              <span class="item-price">€1.8</span>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">Dredhzë / Strawberry</span>
-              <span class="item-price">€1.8</span>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">Vishnje / Sour Cherry</span>
-              <span class="item-price">€1.8</span>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">Portokall / Orange</span>
-              <span class="item-price">€1.8</span>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">Mollë / Apple</span>
-              <span class="item-price">€1.8</span>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">ACE</span>
-              <span class="item-price">€1.8</span>
-            </div>
-            <p class="item-desc">Limon, Portokall, Karrotë</p>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">Ujë / Water</span>
-              <span class="item-price">€1</span>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">Ujë Mineral / Sparkling Water</span>
-              <span class="item-price">€1.2</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Beers -->
-        <div class="menu-category">
-          <h3>Pijet e Ngrohta / Hot Drinks</h3>
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">Espresso</span>
-              <span class="item-price">€1.2</span>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">Double Espresso</span>
-              <span class="item-price">€2</span>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">Macchiato e vogë / Small Macchiato</span>
-              <span class="item-price">€1.2</span>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">Macchiato e madhe / Big Macchiato</span>
-              <span class="item-price">€1.5</span>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">Amerikane / Americano</span>
-              <span class="item-price">€1.5</span>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">NessCoffe Classic </span>
-              <span class="item-price">€1.2</span>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">NessCoffe Vanila </span>
-              <span class="item-price">€1.2</span>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">Qaj Menta / Menthol Tea</span>
-              <span class="item-price">€1.2</span>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">Qaj Kamomil / Chamomile Tea</span>
-              <span class="item-price">€1.2</span>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">Qaj Fruta Mali / Forrest Fruit Tea
-              </span>
-              <span class="item-price">€1.2</span>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">Qaj i Gjelbërt / Green Tea</span>
-              <span class="item-price">€1.2</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Divider is handled by CSS spacing/borders -->
-
-    <section class="accordion-item" id="foods-section">
-      <button class="accordion-header" aria-expanded="false" aria-controls="foods-content">
-        <span class="header-text">Ofertat / Offers</span>
-        <span class="icon">+</span>
-      </button>
-      <div id="foods-content" class="accordion-content" hidden>
-        <div class="menu-grid">
-          <!-- Starters -->
-          <div class="menu-category">
-            <div class="category-header">
-              <h3>Oferta Mëngjesi / Morning Offers</h3>
-              <span class="category-time">(07:00 - 10:00)</span>
             </div>
             <div class="menu-item">
               <div class="item-header">
-                <span class="item-name">Të Gjitha Kafet / All Coffees</span>
-                <span class="item-price">€0.5</span>
+                <span class="item-name">Qaj Kamomil / Chamomile Tea</span>
+                <span class="item-price">€1.2</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <span class="item-name"
+                  >Qaj Fruta Mali / Forrest Fruit Tea
+                </span>
+                <span class="item-price">€1.2</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <span class="item-name">Qaj i Gjelbërt / Green Tea</span>
+                <span class="item-price">€1.2</span>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Events Section -->
-    <section class="accordion-item" id="events-section">
-      <button class="accordion-header" aria-expanded="false" aria-controls="events-content">
-        <span class="header-text">Events</span>
-        <span class="icon">+</span>
-      </button>
-      <div id="events-content" class="accordion-content" hidden>
-        <div class="menu-grid">
-          <!-- Events Category -->
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">DJ Music Night</span>
-              <span class="item-price">Hyrja Falas / Free Entry</span>
-            </div>
-            <p class="item-desc">
-              Çdo të Shtunë / Every Saturday (20:00 - 23:00)
-            </p>
-          </div>
+      <!-- Divider is handled by CSS spacing/borders -->
 
-          <!-- Drinks Category -->
-          <div class="menu-category">
-            <h3>Pijet / Drinks</h3>
-            <div class="menu-item">
-              <div class="item-header">
-                <span class="item-name">Redbull</span>
-                <span class="item-price">€4</span>
+      <section class="accordion-item" id="foods-section">
+        <button
+          class="accordion-header"
+          aria-expanded="false"
+          aria-controls="foods-content"
+        >
+          <span class="header-text">Ofertat / Offers</span>
+          <span class="icon">+</span>
+        </button>
+        <div id="foods-content" class="accordion-content" hidden>
+          <div class="menu-grid">
+            <!-- Starters -->
+            <div class="menu-category">
+              <div class="category-header">
+                <h3>Oferta Mëngjesi / Morning Offers</h3>
+                <span class="category-time">(07:00 - 10:00)</span>
               </div>
-            </div>
-            <div class="menu-item">
-              <div class="item-header">
-                <span class="item-name">Redbull Anije / Redbull on Ice</span>
-                <span class="item-price">€20</span>
-              </div>
-              <p class="item-desc">5 copë / 5pcs</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-header">
-                <span class="item-name">Redbull Anije / Redbull on Ice</span>
-                <span class="item-price">€40</span>
-              </div>
-              <p class="item-desc">10 copë / 10pcs</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-header">
-                <span class="item-name">Redbull Anije / Redbull on Ice</span>
-                <span class="item-price">€60</span>
-              </div>
-              <p class="item-desc">15 copë / 15pcs</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-header">
-                <span class="item-name">Redbull Anije / Redbull on Ice</span>
-                <span class="item-price">€80</span>
-              </div>
-              <p class="item-desc">20 copë / 20pcs + 4 on the house</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-header">
-                <span class="item-name">Rose Lemonade</span>
-                <span class="item-price">€5</span>
-              </div>
-            </div>
-            <div class="menu-item">
-              <div class="item-header">
-                <span class="item-name">Fresh Ice Tea</span>
-                <span class="item-price">€3</span>
-              </div>
-            </div>
-            <div class="menu-item">
-              <div class="item-header">
-                <span class="item-name">Kokteje pa Alkool / Non-alcoholic Cocktails</span>
-                <span class="item-price">€5</span>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Të Gjitha Kafet / All Coffees</span>
+                  <span class="item-price">€0.5</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer class="main-footer">
-    <p class="footer-tagline">N’Papillon Bar – aty ku shoqëria fluturon dhe momentet marrin kuptim.</p>
-    <p>&copy; <span id="current-year"></span> N'PapilonBar</p>
-  </footer>
+      <!-- Events Section -->
+      <section class="accordion-item" id="events-section">
+        <button
+          class="accordion-header"
+          aria-expanded="false"
+          aria-controls="events-content"
+        >
+          <span class="header-text">Events</span>
+          <span class="icon">+</span>
+        </button>
+        <div id="events-content" class="accordion-content" hidden>
+          <div class="menu-grid">
+            <!-- Events Category -->
+            <div class="menu-item">
+              <div class="item-header">
+                <span class="item-name">DJ Music Night</span>
+                <span class="item-price">Hyrja Falas / Free Entry</span>
+              </div>
+              <p class="item-desc">
+                Çdo të Shtunë / Every Saturday (20:00 - 23:00)
+              </p>
+            </div>
 
-  <script src="script.js"></script>
-</body>
+            <!-- Drinks Category -->
+            <div class="menu-category">
+              <h3>Pijet / Drinks</h3>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Redbull</span>
+                  <span class="item-price">€4</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Redbull Anije / Redbull on Ice</span>
+                  <span class="item-price">€20</span>
+                </div>
+                <p class="item-desc">5 copë / 5pcs</p>
+              </div>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Redbull Anije / Redbull on Ice</span>
+                  <span class="item-price">€40</span>
+                </div>
+                <p class="item-desc">10 copë / 10pcs</p>
+              </div>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Redbull Anije / Redbull on Ice</span>
+                  <span class="item-price">€60</span>
+                </div>
+                <p class="item-desc">15 copë / 15pcs</p>
+              </div>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Redbull Anije / Redbull on Ice</span>
+                  <span class="item-price">€80</span>
+                </div>
+                <p class="item-desc">20 copë / 20pcs + 4 on the house</p>
+              </div>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Rose Lemonade</span>
+                  <span class="item-price">€5</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name">Fresh Ice Tea</span>
+                  <span class="item-price">€3</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-header">
+                  <span class="item-name"
+                    >Kokteje pa Alkool / Non-alcoholic Cocktails</span
+                  >
+                  <span class="item-price">€5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <footer class="main-footer">
+      <p class="footer-tagline">
+        N’Papillon Bar – aty ku shoqëria fluturon dhe momentet marrin kuptim.
+      </p>
+      <p>&copy; <span id="current-year"></span> N'PapillonBar</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
