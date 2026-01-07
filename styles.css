@@ -43,14 +43,14 @@ body {
 /* Header & Logo */
 .main-header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: var(--spacing-md) var(--spacing-sm);
-  background: linear-gradient(
-    180deg,
-    rgba(28, 35, 56, 1) 0%,
-    rgba(17, 21, 33, 0) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(28, 35, 56, 1) 0%,
+      rgba(17, 21, 33, 0) 100%);
+  gap: var(--spacing-md);
 }
 
 .logo-container {
@@ -162,7 +162,7 @@ body {
   white-space: nowrap;
 }
 
-.menu-category > h3 {
+.menu-category>h3 {
   color: var(--color-text-muted);
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -229,4 +229,61 @@ body {
   .menu-category:last-child {
     margin-bottom: 0;
   }
+}
+
+/* Navigation Styles */
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-lg);
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--color-text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1.1rem;
+  padding-bottom: 4px;
+  transition: color var(--transition-speed);
+  border-bottom: 2px solid transparent;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+/* Contact Page Styles */
+.contact-item {
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
+
+.contact-item h3 {
+  color: var(--color-accent);
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-xs);
+}
+
+.contact-item p,
+.contact-item a {
+  color: var(--color-text-main);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.map-container {
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(204, 169, 113, 0.2);
 }
