@@ -286,4 +286,15 @@ body {
   overflow: hidden;
   border-radius: var(--border-radius);
   border: 1px solid rgba(204, 169, 113, 0.2);
+  margin-top: var(--spacing-md);
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
 }
