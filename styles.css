@@ -8,11 +8,11 @@
  */
 
 :root {
-  --color-bg: #111521;
-  --color-card-bg: #1c2338;
+  --color-bg: #efede0;
+  --color-card-bg: #f9f8f2;
   --color-accent: #cca971;
-  --color-text-main: #f4eee8;
-  --color-text-muted: #aeb4c0;
+  --color-text-main: #2b2a26;
+  --color-text-muted: #6b685e;
 
   --font-main: "Outfit", sans-serif;
 
@@ -48,8 +48,8 @@ body {
   align-items: center;
   padding: var(--spacing-md) var(--spacing-sm);
   background: linear-gradient(180deg,
-      rgba(28, 35, 56, 1) 0%,
-      rgba(17, 21, 33, 0) 100%);
+      rgba(239, 237, 224, 1) 0%,
+      rgba(239, 237, 224, 0) 100%);
   gap: var(--spacing-md);
 }
 
@@ -103,7 +103,7 @@ body {
 }
 
 .accordion-header:hover {
-  background-color: rgba(255, 255, 255, 0.03);
+  background-color: rgba(0, 0, 0, 0.03);
 }
 
 .accordion-header .icon {
@@ -140,7 +140,7 @@ body {
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: var(--spacing-sm);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 4px;
 }
 
@@ -168,7 +168,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: var(--spacing-sm);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 4px;
 }
 
@@ -309,7 +309,6 @@ body {
   height: 100%;
   border: 0;
   display: block;
-  filter: invert(90%) hue-rotate(180deg) brightness(95%) contrast(90%);
 }
 
 .contact-description {
@@ -321,7 +320,7 @@ body {
   line-height: 1.8;
   text-align: center;
   position: relative;
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(0, 0, 0, 0.03);
   border-radius: var(--border-radius);
   border-left: 3px solid var(--color-accent);
 }
